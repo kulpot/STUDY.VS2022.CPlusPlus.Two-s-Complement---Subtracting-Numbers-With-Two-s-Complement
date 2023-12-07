@@ -392,7 +392,7 @@ doit proc			; proc -- procedure
 	; Rule 4 - Add one to the flipped bits (inverted bits)
 	; Rule 5 - Interpret the resulting value as negative
 
-	;	Binary	|	Decimal(signed)	 |	Decimal(unsigned)|	Decimal(proper signed)	
+	;	Binary	|	Decimal(signed)	 |	Decimal(unsigned)|	Decimal(Two's signed integer)	
 	;	 000	|	 0				 |	0				 |	 0				
 	;	 001	|	 1				 |	1				 |	 1				
 	;	 010	|	 2				 |	2				 |	 2				
@@ -424,15 +424,31 @@ doit proc			; proc -- procedure
 	; ---------------------------------------------- Two's Complement - Subtracting Numbers With Two's Complement -------------------------------------------
 	; ref link:https://www.youtube.com/watch?v=9qABJUNbd5U&list=PLRwVmtr-pp06-8kzgl6j-hp7JSd829ro2&index=26
 
-	
+	;	Binary	|	Decimal(unsigned)|	Decimal(Two's signed integer)
+	;	 000	|	0				 |	 0				
+	;	 001	|	1				 |	 1				
+	;	 010	|	2				 |	 2				
+	;	 011	|	3				 |	 3				
+	;	 100	|	4				 |	-4   			
+	;	 101	|	5				 |	-3				
+	;	 110	|	6				 |	-2				
+	;	 111	|	7				 |	-1	
 
+	;  0 0 1
+	;  1 1 0
+	; -------
+	;  1 1 1  = -1
 
+	;  0 1 1
+	;  1 0 0
+	; -------
+	;  1 1 1  = -1
 
-
-
-
-
-
+	;    1
+	;  0 0 1	 1
+	;  1 0 1	-3
+	; --------
+	;  1 1 0  = -2
 
 
 
