@@ -421,6 +421,18 @@ doit proc			; proc -- procedure
 	;  0 1 1	2+1=3
 	; 1 1 0 1 = -1
 
+	; ---------------------------------------------- Two's Complement - Subtracting Numbers With Two's Complement -------------------------------------------
+	; ref link:https://www.youtube.com/watch?v=9qABJUNbd5U&list=PLRwVmtr-pp06-8kzgl6j-hp7JSd829ro2&index=26
+
+	
+
+
+
+
+
+
+
+
 
 
 
